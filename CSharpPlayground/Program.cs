@@ -10,6 +10,7 @@ namespace CSharpPlayground
     {
         static void Main(string[] args)
         {
+            NullableTest.Start(args);
         }
     }
 }
