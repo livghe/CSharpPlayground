@@ -10,6 +10,7 @@ namespace csplay
     {
         static void Main(string[] args)
         {
+            DataContractSerialization.Start(null);
         }
     }
 }

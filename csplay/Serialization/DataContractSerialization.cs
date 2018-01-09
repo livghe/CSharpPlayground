@@ -10,6 +10,8 @@ namespace csplay
 {
     public class DataContractSerialization
     {
+        private const string fileName = "person.xml";
+
         [DataContract]
         public class Person
         {
@@ -21,19 +23,22 @@ namespace csplay
         {
             Person p = new Person { Name = "Stacey", Age = 30 };
             var ds = new DataContractSerializer(typeof(Person));
-            using (Stream s = File.Create("person.xml"))
+
+            XmlWriterSettings settings = new XmlWriterSettings() { Indent = true };
+            using (XmlWriter w = XmlWriter.Create(fileName, settings))
             {
-                ds.WriteObject(s, p); // Serialize
+                ds.WriteObject(w, p);
             }
 
             Person p2;
 
-            using (Stream s = File.OpenRead("person.xml"))
+            using (Stream s = File.OpenRead(fileName))
             {
                 p2 = (Person)ds.ReadObject(s); // Deserialize
             }
 
             Console.WriteLine(p2.Name + " " + p2.Age); // Stacey 30
+            File.Delete(fileName);
         }
     }
 }
