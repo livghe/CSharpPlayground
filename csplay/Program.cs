@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Runtime.Serialization.Formatters;
+using System.Runtime.Serialization;
 
 namespace csplay
 {
@@ -11,6 +14,7 @@ namespace csplay
         static void Main(string[] args)
         {
             DataContractSerialization.Start(null);
+            BinarySerialization.Start(null);
         }
     }
 }

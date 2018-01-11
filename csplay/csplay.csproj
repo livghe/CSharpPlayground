@@ -48,6 +48,7 @@
     <Compile Include="Lang\Nullable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serialization\BinarySerialization.cs" />
     <Compile Include="Serialization\DataContractSerialization.cs" />
   </ItemGroup>
   <ItemGroup>
