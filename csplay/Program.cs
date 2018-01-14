@@ -15,6 +15,7 @@ namespace csplay
         {
             DataContractSerialization.Start(null);
             BinarySerialization.Start(null);
+            XmlSerialization.Start(null);
         }
     }
 }
