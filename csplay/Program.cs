@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,6 +22,14 @@ namespace csplay
             Reflect.Start(null);
 
             TLS.Start(null);
+
+            Linq.Start(null);
+
+            ParallelInvoke.Start(null);
+            ParallelFor.Start(null);
+            ParallelForEach.Start(null);
+            
         }
     }
 }
+

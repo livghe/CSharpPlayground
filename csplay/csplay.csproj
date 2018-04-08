@@ -47,6 +47,10 @@
     <Compile Include="Lang\Events.cs" />
     <Compile Include="Lang\Lambdas.cs" />
     <Compile Include="Lang\Nullable.cs" />
+    <Compile Include="LINQ\Linq.cs" />
+    <Compile Include="Multithreading\ParallelForEach.cs" />
+    <Compile Include="Multithreading\ParallelInvoke.cs" />
+    <Compile Include="Multithreading\ParallelFor.cs" />
     <Compile Include="Multithreading\TLS.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
